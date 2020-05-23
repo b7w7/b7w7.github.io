@@ -31,6 +31,25 @@
 	.st25{fill:#0093BC;}
 	.st26{fill:#026F91;}
 	.st27{fill:#FBB03B;}
+	@keyframes MoveUpDown {
+	  0%, 100% {
+	    transform: translateY(20px);
+	  }
+	  50% {
+	    transform: translateY(-20px);
+	  }
+	}
+	.left-hand{
+		animation: MoveUpDown;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+	.right-hand{
+		animation: MoveUpDown;
+		animation-direction: reverse;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
 </style>
 <rect x="1.2" y="-0.2" class="st0" width="1920" height="1080"/>
 <g>
@@ -251,7 +270,7 @@
 	<path class="st12" d="M1025.3,971H898.4v0c0-5.4,4.4-9.8,9.8-9.8h107.2C1020.9,961.2,1025.3,965.6,1025.3,971L1025.3,971z"/>
 	<circle class="st9" cx="954.8" cy="134.1" r="9.3"/>
 </g>
-<g>
+<g class="right-hand">
 	<path class="st10" d="M1360.2,1334.5l19.8-5.3l-95.6-354.6l3.5-1c3.1-0.8,4.9-4,4-7l-15.2-56.5c-0.8-3.1-4-4.9-7-4l-23.3,6.3
 		l-10.7-39.7l-0.2,0.1l-6.9-30c0,0,25.4-23.4,20.5-66c-4.8-42.2-5.2-47.7-5.2-47.8l-2.7-45.2l-13.7-50.1c-1.5-9.9-9.2-17-17.3-15.8
 		h0c-8.1,1.2-13.4,10.2-11.9,20.1l13.5,48.2l1.9,30c-1.2-0.4-2.4-0.8-3.6-1.2l-10.2-52.4l-22.5-47c-3-9.6-13.1-15-22.7-12v0
@@ -296,7 +315,7 @@
 			<rect x="1233.8" y="1000.4" transform="matrix(-0.9656 0.2602 -0.2602 -0.9656 2738.2974 2005.1266)" class="st15" width="5.2" height="366.9"/>
 	</g>
 </g>
-<g>
+<g class="left-hand">
 	<path class="st10" d="M938.4,788.1L938.4,788.1c-7.5-8-20.1-8.4-28.1-0.8L879.6,825l-18.2,14.7l24.9-78.9l36-116.7
 		c3-9.6-2.4-19.8-12-22.7v0c-9.6-3-19.8,2.4-22.7,12L851.7,750c-2-0.5-4.1-1-6.1-1.5l8.5-36.7l20.7-50.9c3-9.6-2.4-19.8-12-22.7
 		s-19.8,2.4-22.7,12l-20.3,49.4l-10.2,43.7c-2.2-0.1-4.5-0.1-6.7,0L810,707l21.9-45.2c3-9.6-2.4-19.8-12-22.7s-19.8,2.4-22.7,12
