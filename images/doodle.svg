@@ -48,7 +48,7 @@
 	  }
 	}
 	@-o-keyframes MoveUpDown{
-          0%, 100% {
+    0%, 100% {
 	    transform: translateY(20px);
 	  }
 	  50% {
@@ -62,6 +62,38 @@
 	  50% {
 	    transform: translateY(-20px);
 	  }
+	}
+	@-moz-keyframes ShowHide{
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+	@-webkit-keyframes ShowHide{
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+	@-o-keyframes ShowHide{
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+	@keyframes ShowHide {
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
 	}
 	.left-hand{
 		-webkit-animation: MoveUpDown;
@@ -81,6 +113,23 @@
 		animation-direction: reverse;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
+	}
+	.line-of-code {
+		-webkit-animation: ShowHide;
+		-moz-animation: ShowHide;
+		-ms-animation: ShowHide;
+		-o-animation: ShowHide;
+		animation: ShowHide;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		border-radius: 50%;
+		fill: #00B300;
+	}
+	.code-delay-1 {
+		animation-delay: .5s;
+	}
+	.code-delay-2 {
+		animation-delay: 1s;
 	}
 </style>
 <rect x="1.2" y="-0.2" class="st0" width="1920" height="1080"/>
@@ -220,6 +269,9 @@
 	<path class="st8" d="M1309.4,520.2H611c-13.1,0-23.7-10.7-23.7-23.9l-20.1-367.9c0-15.7,12.6-28.3,28.1-28.3h731.1
 		c15.5,0,28.1,12.7,28.1,28.3l-20.1,366.7C1334.3,509,1323.2,520.2,1309.4,520.2z"/>
 	<polygon class="st9" points="1270,463 651.6,463 632,165.6 1289.6,165.6 	"/>
+	<polygon class="line-of-code" points="1260,250 661.6,250 657.6,200 1265,200"/>
+	<polygon class="line-of-code code-delay-1" points="1255,325 670,325 664,275 1260,275"/>
+	<polygon class="line-of-code code-delay-2" points="1250,400 679,400 671,350 1255,350"/>
 	<path class="st10" d="M1307.1,1006H614.8c-19.5,0-35.2-15.8-35.2-35.2V600.5c0-19.5,15.8-35.2,35.2-35.2h692.3
 		c19.5,0,35.2,15.8,35.2,35.2v370.2C1342.3,990.2,1326.5,1006,1307.1,1006z"/>
 	<path class="st7" d="M1307.1,987.8H614.8c-19.5,0-35.2-15.8-35.2-35.2V582.3c0-19.5,15.8-35.2,35.2-35.2h692.3
