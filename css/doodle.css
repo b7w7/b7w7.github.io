@@ -1,13 +1,3 @@
-.doodle-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.doodle-container > div {
-  /* TODO: Remove background-color when doodle is complete */
-  background-color: #A29C9B;
-  height: 200px;
-  width: 600px;
+.doodle {
+  max-height: 400px;
 }
