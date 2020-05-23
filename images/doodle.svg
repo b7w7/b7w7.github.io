@@ -40,11 +40,19 @@
 	  }
 	}
 	.left-hand{
+		-webkit-animation: MoveUpDown;
+	   	-moz-animation: MoveUpDown;
+	    	-ms-animation: MoveUpDown;
+	     	-o-animation: MoveUpDown;
 		animation: MoveUpDown;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
 	}
 	.right-hand{
+		-webkit-animation: MoveUpDown;
+	   	-moz-animation: MoveUpDown;
+	    	-ms-animation: MoveUpDown;
+	     	-o-animation: MoveUpDown;
 		animation: MoveUpDown;
 		animation-direction: reverse;
 		animation-duration: 1s;
