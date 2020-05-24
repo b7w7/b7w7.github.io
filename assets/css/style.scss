@@ -2,8 +2,6 @@
 ---
 
 @import "{{ site.theme }}";
+@import "normalize.css";
+@import "skeleton.css";
 @import "navbar.css";
-
-body {
-  font-family: "IBM Plex Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
