@@ -1,5 +1,6 @@
 ---
 layout: post
+description: An experimental blog post
 title: Hello, World
 ---
 
