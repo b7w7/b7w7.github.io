@@ -1,0 +1,8 @@
+.navbar {
+  background-color: red;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 20px 10px;
+}
